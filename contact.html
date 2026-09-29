@@ -27,14 +27,16 @@
         <section>
             <h2>Inquiry and Pre-Order Form</h2>
             <p>Want to pre order bread or a cake? Fill out the form below.</p>
-            <form action="#" method="post">
+            <form id="order-form" action="#" method="post" novalidate>
                 <fieldset>
                     <legend>Your Information</legend>
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
+                    <span class="error" id="name-error"></span>
                     <br>
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
+                    <span class="error" id="email-error"></span>
                 </fieldset>
                 <fieldset>
                     <legend>Your Order</legend>
@@ -49,6 +51,7 @@
                     <br>
                     <label for="item-details">Item details:</label>
                     <textarea id="item-details" name="item-details" required></textarea>
+                    <span class="error" id="details-error"></span>
                     <br>
                     <label for="allergy-notes">Allergy notes:</label>
                     <textarea id="allergy-notes" name="allergy-notes"></textarea>
@@ -57,6 +60,7 @@
             </form>
         </section>
     </main>
+    <script src="script.js" defer></script>
     <footer>
         <p>North Star Bakery | 12 Main Street | Open Tue-Sun 7 AM to 3 PM</p>
     </footer>

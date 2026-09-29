@@ -24,6 +24,7 @@
             <h2>Breads</h2>
             <p>We bake sourdough, rye, and whole wheat loaves every day. Prices range from $4 to $8.</p>
             <img src="Bakery_c/bakery-bread_c.png" alt="Fresh baked loaves of bread in the bakery display case">
+            <button class="save-btn" value="Breads">Save Breads to My List</button>
         </section>
         <section>
             <h2>Signature Loaf</h2>
@@ -31,12 +32,21 @@
                 <img src="Bakery_c/bakery-signature-loaf_c.png" alt="The North Star Signature Loaf, a round rustic loaf in a cloth-lined basket">
                 <figcaption>Our Signature Loaf. Baked fresh daily in the morning.</figcaption>
             </figure>
+            <button class="save-btn" value="Signature Loaf">Save Signature Loaf to My List</button>
         </section>
         <section>
             <h2>Pastries and Cakes</h2>
             <p>Our pastries include croissants, muffins, and cinnamon rolls. Prices range from $3 to $6. We also make custom cakes for birthdays and events. Cakes start at $25.</p>
+            <button class="save-btn" value="Pastries and Cakes">Save Pastries and Cakes to My List</button>
+        </section>
+        <section id="my-list-section">
+            <h2>My Pre-Order List</h2>
+            <p>Save products you like. Your list stays here when you come back.</p>
+            <ul id="my-list"></ul>
+            <button id="clear-list">Clear My List</button>
         </section>
     </main>
+    <script src="script.js" defer></script>
     <footer>
         <p>North Star Bakery | 12 Main Street | Open Tue-Sun 7 AM to 3 PM</p>
     </footer>
